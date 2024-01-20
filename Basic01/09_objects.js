@@ -1,11 +1,11 @@
 // object literal
 
-const myPlanet = Symbol("myPlanet")
+// const myPlanet = Symbol("myPlanet")
 
 const jupiter = {
     name: "Jupiter",
     "full Name": "Jupiter-Galaxy",
-    [myPlanet]: "Jupiter-Galaxy-Universe",
+    // [myPlanet]: "Jupiter-Galaxy-Universe",
     radius: 69711000,
     mass: 1.898e24,
     color: "blue",
@@ -99,8 +99,40 @@ const user = [{
     }
 ]
 
-console.log(Object.keys(appUser))
-console.log(Object.values(appUser))
+// console.log(Object.keys(appUser))
+// console.log(Object.values(appUser))
 // console.log(Object.entries(appUser))
 
 // console.log(appUser.hasOwnProperty("name"))
+
+
+
+
+// De-structuring  
+
+const course = {
+    name: "JavaScript",
+    price: 1000,
+    discount: 100,
+    discountedPrice: 100,
+    courseInstructor: "IronMan",
+
+}
+
+
+const {name, price, discount: d} = course;
+console.log(`Name: ${name}, Price: ${price}, Discount: ${d}`);
+console.log(`Discounted Price: ${course.discountedPrice}`);
+
+
+// JSON APIs
+
+// {
+//     "name": "JSON",
+//     "price": 1000,
+//     "discount": 100,
+//     "discountedPrice": 100,
+//     "courseInstructor": "IronMan",
+// }
+
+
