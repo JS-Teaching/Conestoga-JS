@@ -1,4 +1,4 @@
-# Conestoga-JS
+# JavaScript 
 
 **Fundamentals of JavaScript**
 
