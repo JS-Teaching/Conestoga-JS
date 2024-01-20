@@ -1,4 +1,4 @@
-# JavaScript 
+# JavaScript - PROG8661
 
 **Fundamentals of JavaScript**
 
