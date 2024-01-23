@@ -3,6 +3,8 @@ const heros = ["Thor","Iron","Hulk","Darth","R2D2","R"]
 
 const arr2 = new Array();
 
+const {first, second, third, fourth, fifth} = heros
+
 // Array methods
 
 // console.log(heros.length);
