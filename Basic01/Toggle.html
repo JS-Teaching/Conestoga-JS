@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle</title>
+</head>
+<body>
+  
+  <h1>Toggle Background Color</h1>
+
+  <button onclick="stop()">Stop Toggle</button>
+  <button onclick="start()">Start Toggle</button>
+
+</body>
+<script>
+
+let myInterval = setInterval(setColor, 500)
+
+function setColor() {
+  document.body.style.backgroundColor = document.body.style.backgroundColor == "yellow" ? "pink" : "yellow"
+}
+
+function stop() {
+  clearInterval(myInterval)
+}
+
+function start() {
+  myInterval = setInterval(setColor, 500)
+}
+
+setTimeout(() =>{
+  document.querySelector('h1').style.background = 'green'
+}, 5000)
+
+</script>
+
+
+
+</html>
