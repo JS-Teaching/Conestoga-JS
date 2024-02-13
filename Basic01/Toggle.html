@@ -10,7 +10,7 @@
   <h1>Toggle Background Color</h1>
 
   <button onclick="stop()">Stop Toggle</button>
-  <button onclick="start()">Start Toggle</button>
+
 
 </body>
 <script>
@@ -25,9 +25,6 @@ function stop() {
   clearInterval(myInterval)
 }
 
-function start() {
-  myInterval = setInterval(setColor, 500)
-}
 
 setTimeout(() =>{
   document.querySelector('h1').style.background = 'green'
